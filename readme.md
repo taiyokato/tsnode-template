@@ -26,7 +26,7 @@
 
 RouterはAsync関数にするのが好ましい。controller等でDB参照時高確率でPromiseが返ってくる為である。
 routerのエンドポイントの中身構文は
-```
+```javascript
 try {
     // Body, cookie, header等のデータチェック
 
@@ -45,7 +45,7 @@ try {
 ### その他
 
 async function等をよく使うのでVS CodeにUser defined snippetsに以下を追加してる
-```
+```json
 "export async func": {
     "prefix": "eaf",
     "body": [
